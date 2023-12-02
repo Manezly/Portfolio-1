@@ -1,0 +1,151 @@
+@import url('https://api.fontshare.com/v2/css?f[]=general-sans@500,600,400,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0');
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --clr-dark: #070a13;
+    --clr-light: #f1f5f9;
+    --clr-slate400: #94a3b8;
+    --clr-slate600: #475569;
+    --clr-slate800: #1e293b;
+    --clr-rose: #e11d48;
+    --clr-purple400: #c084fc;
+    --clr-purple700: #7e22ce;
+    --clr-orange1: #fed7aa;
+    --clr-orange2: #f97316;
+    --clr-green1: #86efac;
+    --clr-green2: #16a34a;
+    --clr-sky500: #0ea5e9;
+    --clr-fuchsia: #c026d3;
+    --clr-burgermenu: #525252;
+    --clr-burgerhover: #737373;
+    --clr-burgerborder: #94a3b8;
+
+    /* orange rgb(234, 88, 12) */
+
+    /* sizes */
+    --size-xxs: 0.5rem;
+    --size-xs: 0.75rem;
+    --size-sm: 0.875rem;
+    --size-base: 1rem;
+    --size-lg: 1.125rem;
+    --size-xl: 1.25rem;
+    --size-2xl: 1.5rem;
+    --size-3xl: 1.875rem;
+    --size-4xl: 2.25rem;
+    --size-5xl: 3rem;
+    --size-6xl: 3.75rem;
+    --size-7xl: 4.5rem;
+    --size-8xl: 6rem;
+    --size-9xl: 8rem;
+    --size-10xl: 10rem;
+}
+
+* {
+    margin: 0;
+    line-height: calc(1em + 0.5rem);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.light-mode {
+    --clr-dark:  #f1f5f9;
+    --clr-light: #070a13;
+    --clr-slate400: #fff7ed;
+    --clr-slate600: #ffedd5;
+    --clr-slate800: #fff7ed;
+    --clr-purple400: #e11d48;
+    --clr-green1: #16a34a;
+    --clr-green2: #15803d;
+    --clr-burgermenu: #f1f5f9;
+    --clr-burgerhover: #e5e5e5;
+    --clr-burgerborder: #475569;
+}
+
+body {
+    font-family: 'General Sans', sans-serif;
+    background-color: var(--clr-slate800);
+    color: var(--clr-light);
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+    user-select: none;
+}
+
+button {
+    display: inline-block;
+    padding: 0;
+    border: 0;
+    background: none;
+    cursor: pointer;
+    color: inherit;
+}
+
+a {
+    color: var(--clr-light);
+    text-decoration: none;
+}
+
+strong {
+    color: var(--clr-purple400);
+}
+
+p {
+    letter-spacing: 0.05em;
+}
+
+.sub-heading {
+    position: relative;
+    width: fit-content;
+    margin-bottom: 0.7rem;
+}
+
+.sub-heading::after {
+    content: '';
+    width: 100%;
+    height: 0.2rem;
+    position: absolute;
+    background-color: var(--clr-slate400);
+    left: 0;
+    bottom: -0.1rem;
+}
+
+b {
+    font-weight: 700;
+    margin-right: 1rem;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+/* Scrollbar */
+body::-webkit-scrollbar {
+    width: 8px;
+  }
+   
+  body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 0 rgba(0, 0, 0, 0);
+  }
+   
+  body::-webkit-scrollbar-thumb {
+    background-color: var(--clr-light);
+    outline: 1px solid var(--clr-light);
+  }

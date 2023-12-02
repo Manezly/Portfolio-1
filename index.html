@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <section class="header">
+      <nav class="container">
+          <div class="header__home">
+              <a href=""><span class="material-symbols-outlined">ink_pen</span>Leslie Leung</a>
+          </div>
+  
+          <div class="header__links">
+              <a href="#">Works</a>
+              <a href="#">Posts</a>
+              <a href="#">Contact</a>
+              <a href="#">Source Code</a>
+          </div>
+          <div class="header__right">
+            <div class="light__dark">
+                <div class="light__mode active" id="theme-toggle">
+                    <button>
+                        <span class="material-symbols-outlined">wb_sunny</span>
+                    </button>
+                </div>
+                <div class="dark__mode back_up" id="theme-toggle">
+                    <button>
+                        <span class="material-symbols-outlined">dark_mode</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="header__burger">
+                <button><div></div></button>
+                <div class="burger__links">
+                  <a href="#"><span>Works</span></a>
+                  <a href="#"><span>Posts</span></a>
+                  <a href="#"><span>Contact</span></a>
+                  <a href="#"><span>Source Code</span></a>
+                </div>
+            </div>
+          </div>
+      </nav>
+  </section>
+
+  <section class="hero container">
+    <div class="content__width">
+        <div class="hero__info">
+            <h1 class="hero__name">Leslie Leung</h1>
+            <p class="hero__title">Full-Stack Web Developer</p>
+        </div>
+        <img class="hero__img" src="/img/border-collie.webp" alt="Border collie puppy">
+    </div>
+
+    <div class="content__width">
+        <p class="hero_greeting">Hi, I'm a web developer based in the UK</p>
+    </div>
+  </section>
+
+  <section class="threed container section">
+    <div class="content__width">
+      <canvas class="webgl"></canvas>
+    </div>
+  </section>
+
+  <section class="description container section">
+    <div class="content__width">
+        <div class="description__about">
+            <h2 class="sub-heading">About</h2>
+            <p>I am a hobbyist full-stack web developer based in the UK with a passion for building stuff I'm interested in. When I'm not sat at home or work, I enjoy <a href="#" class="underline"><strong>hiking</strong></a>. Currently, I'm working on my web dev skills and seeing where it'll lead me down the road.</p>
+        </div>
+        <a href="#" class="btn works">My Works</a>
+    </div>
+  </section>
+
+  <section class="bio section container">
+    <div class="content__width">
+        <h2 class="sub-heading">Bio</h2>
+        <p><b>1995</b> Born in the UK</p>
+        <p><b>2016</b> Graduated in Mathematics</p>
+        <p><b>2021 to present</b> Started programming</p>
+    </div>
+  </section>
+
+  <section class="hobbies section container">
+    <div class="content__width">
+        <h2 class="sub-heading">Other Interests</h2>
+        <p><a href="#" class="underline"><strong>Hiking</strong></a>, Movies, Running, Music, Memes.</p>
+    </div>
+  </section>
+
+  <section class="contacts section container">
+    <div class="content__width">
+        <h2 class="sub-heading">Contacts</h2>
+        <ul>
+            <li class="contact__list"><a href="#"><img src="/img/facebook.svg" alt="Facebook Icon">Facebook</a></li>
+            <li class="contact__list"><a href="#"><img src="/img/twitter.svg" alt="Twitter Icon">Twitter</a></li>
+            <li class="contact__list"><a href="#"><img src="/img/instagram.svg" alt="Instagram Icon">Instagram</a></li>
+            <li class="contact__list"><a href="#"><img src="/img/github.svg" alt="Github Icon">Github</a></li>
+        </ul>
+    </div>
+  </section>
+
+  <section class="newsletter section container">
+    <div class="content__width">
+        <div>
+            <h2 class="sub-heading">Newsletter</h2>
+            <p>Join me on my coding journey and find out what I've been up to. I'll be posting weekly updates on my progress.</p>
+        </div>
+        <a href="#" class="btn works">Sign Up to my Newsletter</a>
+    </div>
+    
+  </section>
+
+  <section class="footer section container">
+    <div class="content__width">
+      &copy; <span id="currentYear"></span> &middot; Website created by Leslie
+    </div>
+    
+  </section>
+
+
+  <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
