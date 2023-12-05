@@ -1,0 +1,20 @@
+.posts .content__width {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.post__container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.post__container p {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.posts__img {
+    max-width: 80%;
+}

@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leslie First Portfolio</title>
+  </head>
+  <body>
+    <section class="header">
+      <nav class="container">
+          <div class="header__home">
+              <a href="/"><span class="material-symbols-outlined">ink_pen</span>Leslie Leung</a>
+          </div>
+  
+          <div class="header__links">
+              <a href="#">Works</a>
+              <a href="#">Posts</a>
+              <a href="#">Contact</a>
+              <a href="#">Source Code</a>
+          </div>
+          <div class="header__right">
+            <div class="light__dark">
+                <div class="light__mode active" id="theme-toggle">
+                    <button>
+                        <span class="material-symbols-outlined">wb_sunny</span>
+                    </button>
+                </div>
+                <div class="dark__mode back_up" id="theme-toggle">
+                    <button>
+                        <span class="material-symbols-outlined">dark_mode</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="header__burger">
+                <button><div></div></button>
+                <div class="burger__links">
+                  <a href="#"><span>Works</span></a>
+                  <a href="/posts/"><span>Posts</span></a>
+                  <a href="#"><span>Contact</span></a>
+                  <a href="#"><span>Source Code</span></a>
+                </div>
+            </div>
+          </div>
+      </nav>
+  </section>
+
+  <section class="threed container section">
+    <div class="content__width">
+      <canvas class="webgl"></canvas>
+    </div>
+  </section>
+
+  <section class="section container intro">
+    <div class="content__width">
+      <h2 class="sub-heading">Photography</h2>
+      <p>Below is a collection of carefully selected photos captured while hiking around Wales and North England.</p>
+    </div>
+  </section>
+
+  <section class="section container posts">
+    <div class="content__width">
+      <div class="post__container">
+        <img class="posts__img lazy loading" src="https://fakeimg.pl/1200x1200" data-src="../img/posts/castleton.webp" alt="Picture of Castleton">
+        <p>Castleton</p>
+      </div>
+      <div class="post__container">
+        <img class="posts__img lazy loading" src="https://fakeimg.pl/2500x1126" data-src="../img/posts/dovestone-reservoir.jpeg" alt="Picture of Dovestone Reservoir">
+        <p>Dovestone Reservoir</p>
+      </div>
+      <div class="post__container">
+        <img class="posts__img lazy loading" src="https://fakeimg.pl/640x480" data-src="../img/posts/gordale-scar.jpg" alt="Picture of Gordale Scar">
+        <p>Gordale Scar</p>
+      </div>
+      <div class="post__container">
+        <img class="posts__img lazy loading" src="https://fakeimg.pl/900x600" data-src="../img/posts/malham-cove.jpg" alt="Picture of Malham Cove">
+        <p>Molham Cove</p>
+      </div>
+      <div class="post__container">
+        <img class="posts__img lazy loading" src="https://fakeimg.pl/1000x667" data-src="../img/posts/moel-famau.jpg" alt="Picture of Moel Famau">
+        <p>Moel Famau</p>
+      </div>
+      <div class="post__container">
+        <img class="posts__img lazy loading" src="https://fakeimg.pl/1500x1000" data-src="../img/posts/snowdonia.jpg" alt="Picture of Snowdonia">
+        <p>Snowdonia</p>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="footer section container">
+    <div class="content__width">
+      &copy; <span id="currentYear"></span> &middot; Website created by Leslie
+    </div>
+    
+  </section>
+
+  <script type="module" src="./nested.js"></script>
+  </body>
+</html>

@@ -1,19 +1,17 @@
 import '../styles/style.css';
 import '../styles/header.css';
 import '../styles/hero.css';
-import '../styles/utils.css';
+import '../styles/utils.css';  
+import '../styles/posts.css';
 import * as THREE from 'three';
 import {OrbitControls} from 'three/examples/jsm/controls/OrbitControls';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
-
 import lazyLoading from '../posts/lazy-loading';
 
 lazyLoading();
 
 // 3D
-const scene = new THREE.Scene({
-    debugMode: true,
-});
+const scene = new THREE.Scene();
 
 // Sizes
 const container = document.querySelector('.content__width');

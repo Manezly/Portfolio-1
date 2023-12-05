@@ -2,10 +2,6 @@
     padding-top: 5rem;
 }
 
-.hero {
-    padding-top: 5rem;
-}
-
 .hero .content__width {
     display: flex;
     flex-direction: column;
